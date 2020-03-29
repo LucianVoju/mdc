@@ -1,0 +1,7 @@
+@use '@material/button';
+// @use "@material/ripple";
+
+.color-secondary {
+  @include button.ink-color(orange);
+  //   @include ripple.states(orange, $ripple-target: "mdc-button__ripple");
+}
