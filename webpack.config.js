@@ -27,8 +27,9 @@ module.exports = {
           {
             loader: "sass-loader",
             options: {
+              webpackImporter: false,
               // Prefer Dart Sass
-              implementation: require("sass"),
+              implementation: require("dart-sass"),
               sassOptions: {
                 includePaths: ["./node_modules"]
               }
