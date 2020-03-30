@@ -1,7 +1,7 @@
-@use '@material/button';
-// @use "@material/ripple";git
+@use "@material/ripple";
+@import "@material/button/mdc-button";
 
 .color-secondary {
-  @include button.ink-color(orange);
-  //   @include ripple.states(orange, $ripple-target: "mdc-button__ripple");
+  @include mdc-button-ink-color(orange);
+  // @include states(orange, $ripple-target: "mdc-button__ripple");
 }
