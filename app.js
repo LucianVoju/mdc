@@ -1,5 +1,9 @@
-import { MDCRipple } from "@material/ripple/index";
-import { MDCTextField } from "@material/textfield";
 import { MDCSelect } from "@material/select";
-import { MDCFormField } from "@material/form-field";
-import { MDCCheckbox } from "@material/checkbox";
+
+const select = new MDCSelect(document.querySelector(".mdc-select"));
+
+select.listen("MDCSelect:change", () => {
+  alert(
+    `Selected option at index ${select.selectedIndex} with value "${select.value}"`
+  );
+});
