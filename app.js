@@ -1,2 +1,5 @@
 import { MDCRipple } from "@material/ripple/index";
-const ripple = new MDCRipple(document.querySelector(".foo-button"));
+import { MDCTextField } from "@material/textfield";
+import { MDCSelect } from "@material/select";
+import { MDCFormField } from "@material/form-field";
+import { MDCCheckbox } from "@material/checkbox";

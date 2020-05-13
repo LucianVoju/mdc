@@ -1,8 +1,19 @@
 @use "@material/ripple";
 @use '@material/button/mdc-button';
 @use '@material/button';
+@use "@material/textfield/mdc-text-field";
+@use "@material/list/mdc-list";
+@use "@material/menu-surface/mdc-menu-surface";
+@use "@material/menu/mdc-menu";
+@use "@material/select/mdc-select";
+@use "@material/form-field/mdc-form-field";
+@use "@material/checkbox/mdc-checkbox";
 
 .color-secondary {
-  @include button.ink-color(orange);
-  @include ripple.states(orange, $ripple-target: "mdc-button__ripple");
+  @include button.ink-color(secondary);
+  @include ripple.states(secondary, $ripple-target: "mdc-button__ripple");
+}
+
+.demo-width-class {
+  width: 400px;
 }
